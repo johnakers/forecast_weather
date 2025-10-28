@@ -1,5 +1,7 @@
 # ForecastWeather ⛈
 
+<img src="./screenshot.png" />
+
 _A little weather app showing the next 5 days forecast, using the [Google Geocoding](https://developers.google.com/maps/documentation/geocoding/overview) and [Google Weather](https://developers.google.com/maps/documentation/weather/daily-forecast) APIs_
 
 ### Quick Details
