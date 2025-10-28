@@ -1,0 +1,14 @@
+<div class="address">
+  <div class="input">
+    Forecast for: "<%= @addr.input %>", <%= @addr.formatted_address %>
+  </div>
+  <div class="postal_code">
+    Postal code: <%= @addr.postal_code %>
+  </div>
+  <div class="forecasted_at">
+    Forecasted at: <%= @addr.forecasted_at %>
+  </div>
+  <div class="forecasts">
+    <%= render ForecastComponent.with_collection(@addr.forecasts) %>
+  </div>
+</div>

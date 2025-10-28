@@ -1,0 +1,13 @@
+<%= form_with(model: @address) do |form| %>
+<div class="form_group">
+  <%= form.label :input, "Add an Address", class: "form_label" %>
+  <%= form.text_field :input, class: "form_label" %>
+  <%= form.submit "Get Forecast", class: "form_button" %>
+</div>
+<% end %>
+
+<div class="addresses">
+  <% @addresses.each do |address| %>
+  <%= render AddressComponent.new(addr: address) %>
+  <% end %>
+</div>

@@ -1,0 +1,7 @@
+<div class="forecast">
+  <div class="normalized_date"><%= @forecast.normalized_date %></div>
+  <div class="icon"><%= image_tag @forecast.icon %></div>
+  <div class="temperatures">
+    <%= @forecast.max %>°C / <%= @forecast.min %>°C
+  </div>
+</div>
